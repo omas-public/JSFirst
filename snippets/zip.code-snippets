@@ -1,0 +1,13 @@
+{
+  "template": {
+    "scope": "javascript, typescript",
+    "prefix": "zipfun",
+    "body": [
+      "const zip = (...args) => {",
+      "  const size = Math.min(...Array.from(args, arg => arg.length))",
+      "  return Array.from(Array(size), (v, i) => args.map(arg => arg[i]))",
+      "}",
+    ],
+    "description": "zip function"
+  }
+}

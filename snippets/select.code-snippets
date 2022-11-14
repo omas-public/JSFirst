@@ -1,0 +1,14 @@
+{
+  "template": {
+    "scope": "javascript, typescript",
+    "prefix": "selectfun",
+    "body": [
+      "const select = (map, exception) => key => map.get(key) ?? exception",
+      "const selectRange = (map, exception) => n => {",
+      "  const between = c => ([a, b]) => a <= c && c <= b",
+      "  return map.get([...map.keys()].filter(between(n))[0]) ?? exception",
+      "}"
+    ],
+    "description": "select function"
+  }
+}

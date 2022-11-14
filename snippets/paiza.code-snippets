@@ -1,0 +1,24 @@
+{
+  "Paiza Function Snippet": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "paiza",
+    "body": [
+      "const identity = v => v",
+      "const join = (sep = '\\n') => array => array.join(sep)",
+      "const display = (fn = identity) => v => console.log(fn(v))",
+      "const inputs = (file = '/dev/stdin') => {",
+      "  const stream = require('fs').readFileSync(file, 'utf-8').trim()",
+      "  const toArray = sep => fn => iter => Array.from(split(sep)(iter), fn)",
+      "  return {",
+      "    readCols: (fn = identity) => toArray(' ')(fn)(stream),",
+      "    readRows: (fn = identity) => toArray('\\n')(fn)(stream),",
+      "    readStream: (fn = identity) => fn(stream),",
+      "    readMatrix: (fn = identity) => toArray('\\n')(identity)(stream)",
+      "      .map(toArray(' ')(fn))",
+      "  }",
+      "}",
+      "",
+    ],
+    "description": "for paiza input"
+  }
+}

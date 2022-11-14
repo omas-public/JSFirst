@@ -1,0 +1,16 @@
+Given a string, return true if it ends in "ly".
+
+endsLy("oddly") → true
+endsLy("y") → false
+endsLy("oddy") → false
+--
+endsLy(str)
+endsLy("oddly") → true
+endsLy("y")     → false
+endsLy("oddy")  → false
+endsLy("oddl")  → false
+endsLy("olydd") → false
+endsLy("ly")    → true
+endsLy("")      → false
+endsLy("falsey")→ false
+endsLy("evenly")→ true

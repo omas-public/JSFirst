@@ -1,0 +1,11 @@
+{
+  "template": {
+    "scope": "javascript, typescript",
+    "prefix": "productfun",
+    "body": [
+      "const product = (...iters) => iters.reduce(",
+      "    (a, b) => a.flatMap(d => b.map(e => [d, e].flat())))"
+    ],
+    "description": "product function"
+  }
+}
