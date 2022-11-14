@@ -2,6 +2,8 @@
 
 Stringの重要メソッド，一部基本的なコードで再実装
 
+## [String API](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String)
+
 ## [String.length](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String/length)
 
 length プロパティは String オブジェクトの文字列長を UTF-16 コードユニットの数で表します。

@@ -93,7 +93,6 @@ JavaScriptの基礎をPaizaを併用して学習します。
   - 文字列とUnicode
   - Math
   - Date
-- [String](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String)
 - [文字列の主要メソッド](./docs/string.md)
 
 
