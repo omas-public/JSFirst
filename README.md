@@ -171,8 +171,9 @@ JavaScriptは様々なLoop処理があるが, 古典的なLoop文とmap/Array.fr
 
 #### Exercise
 
+- [二重ループメニュー](./exercise/problems/double_roop_problems.template.md)
+- [二重ループメニュー 解答](./exercise/problems/double_roop_problems.md)
 - [Cランクレベルアップメニュー](https://paiza.jp/works/mondai/c_rank_level_up_problems/problem_index?language_uid=javascript)
-- [二重ループメニュー](https://paiza.jp/works/mondai/double_roop_problems/problem_index?language_uid=javascript)
 
 ### 9th lesson
 
