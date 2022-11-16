@@ -245,15 +245,16 @@ console.log(result)
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [X, Y, Z] = stream.split(' ').map(Number)
-const fun = (money, ...coins) => coins.sort((a, b) => b - a)
-  .reduce((acc, coin) => {
-    const n = Math.trunc(acc.at(-1) / coin)
-    const rest = acc.at(-1) - (coin * n)
-    return [...acc.slice(0, -1), n, rest]
-  }, [money])
-  .reduce((a, b) => a + b, 0)
+const [coin1, coin2] = [X, Y].sort((a, b) => b - a)
+const len = parseInt(Z / coin1) + 1                 
 
-const result = Math.min(fun(Z, Math.min(X, Y)), fun(Z, X, Y))
+const array = [...Array(len).keys()].map(c1 => {
+  const c2 = parseInt((Z - (coin1 * c1)) / coin2)  
+  const rest = Z - ((coin1 * c1) + (coin2 * c2))    
+  return [c1, c2, rest].reduce((a, b) => a + b, 0)
+})
+
+const result = Math.min(...array)
 console.log(result)
 ```
 

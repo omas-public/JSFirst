@@ -248,6 +248,7 @@ console.log(result)
 
 ### [STEP: 7 お金の支払い](https://paiza.jp/works/mondai/double_roop_problems/double_roop_problems__payment/edit?language_uid=javascript)
 
+
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [X, Y, Z] = stream.split(' ').map(Number)
@@ -260,6 +261,23 @@ const fun = (money, ...coins) => coins.sort((a, b) => b - a)
   .reduce((a, b) => a + b, 0)
 
 const result = Math.min(fun(Z, Math.min(X, Y)), fun(Z, X, Y))
+console.log(result)
+```
+
+様々なデータを考慮したパターン
+```js
+const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
+const [X, Y, Z] = stream.split(' ').map(Number)
+const [coin1, coin2] = [X, Y].sort((a, b) => b - a) // 金額が大きい方がcoin1
+const len = parseInt(Z / coin1) + 1                 // coin1の最大枚数
+
+const array = [...Array(len).keys()].map(c1 => {
+  const c2 = parseInt((Z - (coin1 * c1)) / coin2)  // c1, c2 コインの枚数
+  const rest = Z - ((coin1 * c1) + (coin2 * c2))   // 
+  return [c1, c2, rest].reduce((a, b) => a + b, 0)
+})
+
+const result = Math.min(...array)
 console.log(result)
 ```
 
