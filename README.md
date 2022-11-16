@@ -177,7 +177,7 @@ JavaScriptは様々なLoop処理があるが, 古典的なLoop文とmap/Array.fr
 
 ### 9th lesson
 
-- [Template](../js/docs/snippets.md)の使い方を学習しよう
+- [Template](./docs/snippet.md)の使い方を学習しよう
 
 #### Exercise
 

@@ -10,8 +10,9 @@
   // define function
   const fn = (s) => {
     // ここに処理を書く
-    if (s === 'baseball') { return 9 }
-
+    if (s === 'baseball') { 
+      return 9 
+    }
     if (s === 'soccer') {
       return 11
     }
