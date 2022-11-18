@@ -1,6 +1,6 @@
 {
-  "template": {
-    "scope": "javascript, typescript",
+  "product function snippet": {
+    "scope": "javascript,javascriptreact",
     "prefix": "productfun",
     "body": [
       "const product = (...iters) => iters.reduce(",

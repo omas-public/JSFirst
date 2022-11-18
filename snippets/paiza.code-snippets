@@ -1,7 +1,7 @@
 {
-  "Paiza Function Snippet": {
+  "paiza function snippet": {
     "scope": "javascript,javascriptreact",
-    "prefix": "paiza",
+    "prefix": "paizafun",
     "body": [
       "const identity = v => v",
       "const join = (sep = '\\n') => array => array.join(sep)",
@@ -18,7 +18,18 @@
       "  }",
       "}",
       "",
+      "const outputs = v => {",
+      "  const join = sep => array => array.join(sep)",
+      "  const _print = fn => v => console.log(fn(v))",
+      "  return {",
+      "    line: () => _print(identity)(v),",
+      "    cols: () => _print(join(' '))(v),",
+      "    rows: () => _print(join('\\n'))(v),",
+      "    json: () => _print(JSON.stringify)(v),",
+      "    matrix: () => _print(join('\\n'))(v.map(join(' ')))",
+      "  }",
+      "},"
     ],
-    "description": "for paiza input"
+    "description": "Inputs/Outputs for Paiza Exercise"
   }
 }

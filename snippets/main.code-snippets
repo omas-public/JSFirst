@@ -1,0 +1,29 @@
+{
+  "main function snippet": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "mainfun",
+    "body": [
+      "// 即時実行関数(main)",
+      "(() => {",
+      "",
+      "  // define function",
+      "  const fn = (${1:PARAM}) => {",
+      "    // ここに処理を書く",
+      "",
+      "    return ${1:PARAM}",
+      "  }",
+      "",
+      "  // declare varriable",
+      "  const ${1:PARAM} = inputs().${2:readStream()}",
+      "",
+      "  // processing",
+      "  const result = fn(${1:PARAM})",
+      "",
+      "  // display",
+      "  outputs(result).toJSON()",
+      "",
+      "})()"
+    ],
+    "description": "Inputs/Outputs helper function for paiza exercise"
+  }
+}

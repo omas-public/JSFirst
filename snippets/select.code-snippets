@@ -1,13 +1,26 @@
 {
-  "template": {
-    "scope": "javascript, typescript",
+  "select function snippet": {
+    "scope": "javascript, javascriptreact",
     "prefix": "selectfun",
     "body": [
       "const select = (map, exception) => key => map.get(key) ?? exception",
       "const selectRange = (map, exception) => n => {",
       "  const between = c => ([a, b]) => a <= c && c <= b",
       "  return map.get([...map.keys()].filter(between(n))[0]) ?? exception",
-      "}"
+      "}",
+      "",
+      "const selectRange = (map, exception) => key => {",
+      "  const inRange = n => ([a, b]) => n > a && n <= b",
+      "  const zip = (...args) => {",
+      "    const size = Math.min(...Array.from(args, arg => arg.length))",
+      "    return Array.from(Array(size), (v, i) => args.map(arg => arg[i]))",
+      "  }",
+      "  const index = zip([Number.MIN_SAFE_INTEGER, ...map.keys()]",
+      "    , [...map.keys(), Number.MAX_SAFE_INTEGER,]",
+      "  ).findIndex(inRange(key))",
+      "",
+      "  return [...map.values()].at(index) ?? exception",
+      "}",
     ],
     "description": "select function"
   }

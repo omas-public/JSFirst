@@ -1,6 +1,6 @@
 {
-  "template": {
-    "scope": "javascript, typescript",
+  "zip function snippets": {
+    "scope": "javascript, javascriptreact",
     "prefix": "zipfun",
     "body": [
       "const zip = (...args) => {",
