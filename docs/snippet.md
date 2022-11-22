@@ -142,6 +142,18 @@ const zip = (...args) => {
 }
 ```
 
+### [combination.code-snippets](../snippets/combination.code-snippets)
+
+```js
+/**
+ * combination: 配列から組み合わせを作る
+ * @param {Array} array
+ * @return Array
+ */ 
+const combination = array => array.flatMap(
+  (v, i) => Array.from(array.slice(i + 1), a => [v, a]))
+```
+
 ### [select.code-snippets](../snippets/select.code-snippets)
 
 usage: ```selectfun```

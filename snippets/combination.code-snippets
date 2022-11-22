@@ -1,0 +1,11 @@
+{
+  "combination function snippet": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "combinationfun",
+    "body": [
+      "const combination = array => array.flatMap(",
+      "  (v, i) => Array.from(array.slice(i + 1), a => [v, a]))"
+    ],
+    "description": "combination function"
+  }
+}
