@@ -146,12 +146,12 @@ const zip = (...args) => {
 
 ```js
 /**
- * combination: 配列から組み合わせを作る
+ * combination2: 配列からnC2の組み合わせを作る
  * @param {Array} array
  * @return Array
  */ 
-const combination = array => array.flatMap(
-  (v, i) => Array.from(array.slice(i + 1), a => [v, a]))
+const combination2 = array => array.flatMap(
+  (v, i) => Array.from(array.slice(i + 1), a => [v, a].flat()))
 ```
 
 ### [select.code-snippets](../snippets/select.code-snippets)

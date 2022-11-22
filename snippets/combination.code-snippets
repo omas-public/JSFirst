@@ -3,8 +3,8 @@
     "scope": "javascript,javascriptreact",
     "prefix": "combinationfun",
     "body": [
-      "const combination = array => array.flatMap(",
-      "  (v, i) => Array.from(array.slice(i + 1), a => [v, a]))"
+      "const combination2 = array => array.flatMap(",
+      "  (v, i) => array.slice(i + 1).map(a => [v, a].flat()))"
     ],
     "description": "combination function"
   }
