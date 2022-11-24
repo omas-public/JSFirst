@@ -62,9 +62,9 @@ JavaScriptの基礎をPaizaを併用して学習します。
 #### Exercise
 
 - [標準入力サンプル問題セット](https://paiza.jp/works/mondai/stdin/problem_index?language_uid=javascript)
-- [標準入力サンプル問題セット 解答](./exercise/problems/stdin.md)
-- [算術・代入演算メニュー](./exercise/template/arithmetic_substitution_op.md)
-- [算術・代入演算メニュー 解答](./exercise/problems/arithmetic_substitution_op.md)
+- [標準入力サンプル問題セット 解答](./exercise/problems/basic/stdin.md)
+- [算術・代入演算メニュー](./exercise/problems/exercise/arithmetic_substitution_op.md)
+- [算術・代入演算メニュー 解答](./exercise/problems/basic/arithmetic_substitution_op.md)
 
 
 ### 3rd lesson 
@@ -78,7 +78,7 @@ JavaScriptの基礎をPaizaを併用して学習します。
 #### Exercise
 
 - [標準出力メニュー](https://paiza.jp/works/mondai/stdout_primer/problem_index?language_uid=javascript)
-- [標準出力メニュー 解答](./exercise/problems/stdout_primer.md)
+- [標準出力メニュー 解答](./exercise/problems/basic/stdout_primer.md)
 
 
 ### 4th lesson
@@ -99,8 +99,8 @@ JavaScriptの基礎をPaizaを併用して学習します。
 #### Exercise
 
 - [コードガールコレクション Chap08 - Chap11](https://paiza.jp/cgc) 
-- [文字列処理メニュー](./exercise/template/string_primer.md)
-- [文字列処理メニュー 解答](./exercise/problems/string_primer.md)
+- [文字列処理メニュー](./exercise/problems/exercise/string_primer.md)
+- [文字列処理メニュー 解答](./exercise/problems/basic/string_primer.md)
 
 ### 5th lesson
 
@@ -115,8 +115,8 @@ JavaScriptの基礎をPaizaを併用して学習します。
 
 #### Exercise
 
-- [配列メニュー](./exercise/template/array_primer.md)
-- [配列メニュー 解答](./exercise/problems/array_primer.md)
+- [配列メニュー](./exercise/problems/exercise/array_primer.md)
+- [配列メニュー 解答](./exercise/problems/basic/array_primer.md)
 
 
 ### 6th lesson
@@ -151,10 +151,10 @@ JavaScriptの基礎をPaizaを併用して学習します。
 #### Exercise
 
 - [コードガールコレクション Chap12 - Chap17](https://paiza.jp/cgc)
-- [論理演算メニュー](./exercise/template/logical_operation.md)
-- [論理演算メニュー 解答](./exercise/problems/logical_operation.md)
-- [条件分岐メニュー](./exercise/template/conditions_branch.md)
-- [条件分岐メニュー 解答](./exercise/problems/conditions_branch.md)
+- [論理演算メニュー](./exercise/problems/exercise/logical_operation.md)
+- [論理演算メニュー 解答](./exercise/problems/basic/logical_operation.md)
+- [条件分岐メニュー](./exercise/problems/exercise/conditions_branch.md)
+- [条件分岐メニュー 解答](./exercise/problems/basic/conditions_branch.md)
 
 
 ### 8th lesson
@@ -171,8 +171,8 @@ JavaScriptは様々なLoop処理があるが, 古典的なLoop文とmap/Array.fr
 
 #### Exercise
 
-- [二重ループメニュー](./exercise/template/double_roop_problems.md)
-- [二重ループメニュー 解答](./exercise/problems/double_roop_problems.md)
+- [二重ループメニュー](./exercise/problems/exercise/double_roop_problems.md)
+- [二重ループメニュー 解答](./exercise/problems/basic/double_roop_problems.md)
 
 ### 9th lesson
 
@@ -181,7 +181,7 @@ JavaScriptは様々なLoop処理があるが, 古典的なLoop文とmap/Array.fr
 #### Exercise
 
 - [標準入力メニュー](https://paiza.jp/works/mondai/stdin_primer/problem_index?language_uid=javascript)
-- [標準入力メニュー 解答](./exercise/problems/stdin_primer.md)
+- [標準入力メニュー 解答](./exercise/problems/basic/stdin_primer.md)
 
 ### Final lesson
 
