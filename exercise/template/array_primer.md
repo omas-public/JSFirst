@@ -1,3 +1,7 @@
+author: Omas Naohiko
+create: 2022-11-12
+update: 2022-11-24
+
 # [配列メニュー](https://paiza.jp/works/mondai/array_primer/problem_index?language_uid=javascript)
 
 
@@ -5,9 +9,9 @@
 
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
-// const cols = stream.split(' ')
-// const lines = stream.split('\n')
-// const matrix = stream.split('\n').map(line => line.split(' '))
+const cols = stream.split(' ')
+const lines = stream.split('\n')
+const matrix = stream.split('\n').map(line => line.split(' '))
 ```
 
 ## 【次元配列の入出力】i番目の出力 Boss
@@ -22,6 +26,8 @@ const stream = '5 1 3 4 5 12 6 8 1 3'
 const cols = stream.split(' ')
 // write code here
 
+
+console.log(result)
 ```
 ### [STEP: 2 全要素の出力](https://paiza.jp/works/mondai/array_primer/array_primer__1dmatrix_output_step2/edit?language_uid=javascript)
 
@@ -33,6 +39,8 @@ const stream = '5 1 3 4 5 12 6 8 1 3'
 const cols = stream.split(' ')
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 3 i 番目の出力](https://paiza.jp/works/mondai/array_primer/array_primer__1dmatrix_output_step3/edit?language_uid=javascript)
@@ -45,6 +53,8 @@ const stream = '5 1 3 4 5 12 6 8 1 3'
 const cols = stream.split(' ')
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 4 配列の入力 1](https://paiza.jp/works/mondai/array_primer/array_primer__1dmatrix_input_step1/edit?language_uid=javascript)
@@ -56,6 +66,8 @@ const stream = '8 1 3 3 8 1 1 3 8 8'
 const cols = stream.split(' ')
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 5 配列の入力 2](https://paiza.jp/works/mondai/array_primer/array_primer__1dmatrix_input_step2/edit?language_uid=javascript)
@@ -67,6 +79,8 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const cols = stream.split(' ')
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 6 配列の入力 3](https://paiza.jp/works/mondai/array_primer/array_primer__1dmatrix_input_step3/edit?language_uid=javascript)
@@ -79,6 +93,8 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [N, A] = stream.split('\n')
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 7 i番目の出力 1](https://paiza.jp/works/mondai/array_primer/array_primer__1dmatrix_i-thoutput_step1/edit?language_uid=javascript)
@@ -93,6 +109,7 @@ const cols = '1 3 5 4 6 2 1 7 1 5'.split(' ')
 // write code here
 
 
+console.log(result)
 ```
 
 ### [STEP: 8 i番目の出力 2](https://paiza.jp/works/mondai/array_primer/array_primer__1dmatrix_i-thoutput_step2/edit?language_uid=javascript)
@@ -105,6 +122,8 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [K, A] = stream.split('\n')
 // write code here
 
+
+console.log(result)
 ```
 
 ### [final 次元配列の入出力】i番目の出力 Boss](https://paiza.jp/works/mondai/array_primer/array_primer__1dmatrix_i-thoutput_boss/edit?language_uid=javascript)
@@ -118,14 +137,17 @@ const [NK, A] = stream.split('\n')
 // write code here
 
 
+console.log(result)
 ```
 
-Matrixにして処理
+#### Matrixにして処理
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [[N, K], AS] = stream.split('\n').map(line => line.split(' ').map(Number))
 // write code here
 
+
+console.log(result)
 ```
 
 ## 【二次元配列の入出力】i番目の出力 Boss
@@ -142,6 +164,8 @@ const lines = stream.split('\n')
 const matrix = lines.map(line => line.split(' '))
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 2 全要素の出力](https://paiza.jp/works/mondai/array_primer/array_primer__2dmatrix_output_step2/edit?language_uid=javascript)
@@ -155,6 +179,8 @@ const lines = stream.split('\n')
 const matrix = lines.map(line => line.split(' '))
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 3 行数の出力](https://paiza.jp/works/mondai/array_primer/array_primer__2dmatrix_output_step3/edit?language_uid=javascript)
@@ -167,6 +193,8 @@ const stream = '1 2 3\n4 5 6\n8 1 3'
 const lines = stream.split('\n')
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 4 列数の出力](https://paiza.jp/works/mondai/array_primer/array_primer__2dmatrix_output_step4/edit?language_uid=javascript)
@@ -181,6 +209,8 @@ const stream = '1 2 3 4\n6 5 4 3\n3 1 8 1'
 const lines = stream.split('\n')
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 5 各行の要素数の出力](https://paiza.jp/works/mondai/array_primer/array_primer__2dmatrix_output_step5/edit?language_uid=javascript)
@@ -194,6 +224,8 @@ const stream = '1\n2 3\n4 5 6'
 const lines = stream.split('\n')
 // write code here
 
+
+console.log(result)
 ```
 ### [STEP: 6 i 行目 j 列目の出力](https://paiza.jp/works/mondai/array_primer/array_primer__2dmatrix_output_step6/edit?language_uid=javascript)
 
@@ -204,6 +236,8 @@ const stream = '1 2 3\n8 1 3\n10 100 1'
 const lines = stream.split('\n')
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 7 二次元配列の入力 1](https://paiza.jp/works/mondai/array_primer/array_primer__2dmatrix_input_step1/edit?language_uid=javascript)
@@ -215,6 +249,8 @@ const lines = stream.split('\n')
 const stream = '1 3 5 7\n8 1 3 8'
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 8 二次元配列の入力 2](https://paiza.jp/works/mondai/array_primer/array_primer__2dmatrix_input_step2/edit?language_uid=javascript)
@@ -226,6 +262,8 @@ const stream = '1 3 5 7\n8 1 3 8'
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 9 二次元配列の入力 3](https://paiza.jp/works/mondai/array_primer/array_primer__2dmatrix_input_step3/edit?language_uid=javascript)
@@ -237,6 +275,8 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 // write code here
 
+
+console.log(result)
 ```
 ### [STEP: 10 二次元配列の入力 4](https://paiza.jp/works/mondai/array_primer/array_primer__2dmatrix_input_step4/edit?language_uid=javascript)
 
@@ -247,6 +287,8 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 11 i番目の出力 1](https://paiza.jp/works/mondai/array_primer/array_primer__2dmatrix_i-thoutput_step1/edit?language_uid=javascript)
@@ -261,6 +303,8 @@ const [K, L] = stream.split(' ').map(Number)
 const a = '1 2 3 4\n10 100 0 5\n8 1 3 8\n15 34 94 25'
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 12 i番目の出力 2](https://paiza.jp/works/mondai/array_primer/array_primer__2dmatrix_i-thoutput_step2/edit?language_uid=javascript)
@@ -273,6 +317,8 @@ const a = '1 2 3 4\n10 100 0 5\n8 1 3 8\n15 34 94 25'
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 // write code here
 
+
+console.log(result)
 ```
 
 ### [final 二次元配列の入出力】i番目の出力 Boss](https://paiza.jp/works/mondai/array_primer/array_primer__2dmatrix_i-thoutput_boss/edit?language_uid=javascript)
@@ -285,6 +331,8 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 // write code here
 
+
+console.log(result)
 ```
 
 ## 【配列の検索】何個ある? Boss
@@ -298,6 +346,8 @@ const stream = '10 13 21 1 6 51 10 8 15 6'
 const cols = stream.split(' ')
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 2 配列に含まれている? 2](https://paiza.jp/works/mondai/array_primer/array_primer__search_include_step2/edit?language_uid=javascript)
@@ -311,6 +361,8 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const N = parseInt(stream)
 // write code here
 
+
+console.log(result)
 ```
 ### [STEP: 3 配列に含まれている? 3](https://paiza.jp/works/mondai/array_primer/array_primer__search_include_step3/edit?language_uid=javascript)
 
@@ -321,6 +373,8 @@ const N = parseInt(stream)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 4 何番目にある? 1](https://paiza.jp/works/mondai/array_primer/array_primer__search_i-th_step1/edit?language_uid=javascript)
@@ -332,6 +386,8 @@ const stream = '1 10 2 9 3 8 4 7 5 6'
 const cols = stream.split(' ')
 // write code here
 
+
+console.log(result)
 ```
 ### [STEP: 5 何番目にある? 2](https://paiza.jp/works/mondai/array_primer/array_primer__search_i-th_step2/edit?language_uid=javascript)
 
@@ -344,6 +400,8 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const N = parseInt(stream)
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 6 何番目にある? 3](https://paiza.jp/works/mondai/array_primer/array_primer__search_i-th_step3/edit?language_uid=javascript)
@@ -355,6 +413,8 @@ const N = parseInt(stream)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 7 何個ある? 1](https://paiza.jp/works/mondai/array_primer/array_primer__search_count_step1/edit?language_uid=javascript)
@@ -367,6 +427,8 @@ const stream = '1 2 2 1 2 1 2 1 1 1'
 const cols = stream.split(' ')
 // write code here
 
+
+console.log(result)
 ```
 ### [STEP: 8 何個ある? 2](https://paiza.jp/works/mondai/array_primer/array_primer__search_count_step2/edit?language_uid=javascript)
 
@@ -380,6 +442,8 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const N = parseInt(stream)
 // write code here
 
+
+console.log(result)
 ```
 
 ### [final【配列の検索】何個ある? Boss](https://paiza.jp/works/mondai/array_primer/array_primer__search_count_boss/edit?language_uid=javascript)
@@ -392,6 +456,8 @@ const N = parseInt(stream)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 // write code here
 
+
+console.log(result)
 ```
 
 ## 【文字列の配列】辞書順に出力 Boss
@@ -406,6 +472,8 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [[A, B, N], AS] = stream.split('\n').map(line => line.split(' '))
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 2 2 変数の入れ替え](https://paiza.jp/works/mondai/array_primer/array_primer__elm_change/edit?language_uid=javascript)
@@ -418,6 +486,8 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [A, B] = stream.split(' ')
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 3 配列の要素の入れ替え](https://paiza.jp/works/mondai/array_primer/array_primer__array_elm_change/edit?language_uid=javascript)
@@ -432,6 +502,8 @@ const [[A, B, N], AS] = stream.split('\n')
   .map(line => line.split(' ').map(Number))
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 4 部分配列](https://paiza.jp/works/mondai/array_primer/array_primer__partical_array/edit?language_uid=javascript)
@@ -447,6 +519,8 @@ const [[A, B, N], AS] = stream.split('\n')
   .map(line => line.split(' ').map(Number))
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 5 配列の連結](https://paiza.jp/works/mondai/array_primer/array_primer__array_join/edit?language_uid=javascript)
@@ -461,6 +535,8 @@ const [[N, M], AS, BS] = stream.split('\n')
   .map(line => line.split(' ').map(Number))
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 6 配列のソート](https://paiza.jp/works/mondai/array_primer/array_primer__array_sort/edit?language_uid=javascript)
@@ -475,6 +551,8 @@ const [[N], AS] = stream.split('\n')
   .map(line => line.split(' ').map(Number))
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 7 配列の反転](https://paiza.jp/works/mondai/array_primer/array_primer__array_reverse/edit?language_uid=javascript)
@@ -489,6 +567,8 @@ const [[N], AS] = stream.split('\n')
   .map(line => line.split(' ').map(Number))
 // write code here
 
+
+console.log(result)
 ```
 ### [STEP: 8 要素のカウント](https://paiza.jp/works/mondai/array_primer/array_primer__elm_count/edit?language_uid=javascript)
 
@@ -503,6 +583,8 @@ const [[N, M], AS] = stream.split('\n')
   .map(line => line.split(' ').map(Number))
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 9 配列末尾への追加](https://paiza.jp/works/mondai/array_primer/array_primer__push_back/edit?language_uid=javascript)
@@ -517,9 +599,11 @@ const [[N, M], AS] = stream.split('\n')
   .map(line => line.split(' ').map(Number))
 // write code here
 
+
+console.log(result)
 ```
 
-破壊的メソッド(push)を使用
+#### 破壊的メソッド(push)を使用
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [[N, M], AS] = stream.split('\n')
@@ -542,9 +626,11 @@ const [[N, M], AS] = stream.split('\n')
   .map(line => line.split(' ').map(Number))
 // write code here
 
+
+console.log(result)
 ```
 
-破壊的メソッド(splice)を使用
+#### 破壊的メソッド(splice)を使用
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [[N, M], AS] = stream.split('\n')
@@ -567,9 +653,11 @@ const [[N, M, K], AS] = stream.split('\n')
   .map(line => line.split(' ').map(Number))
 // write code here
 
+
+console.log(result)
 ```
 
-破壊的メソッド(splice)を使用
+#### 破壊的メソッド(splice)を使用
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [[N, M, K], AS] = stream.split('\n')
@@ -586,6 +674,8 @@ console.log(AS.join('\n'))
 const stream = 'Hello\npaiza\n1234\npa13'
 // write code here
 
+
+console.log(result)
 ```
 
 
@@ -594,10 +684,11 @@ const stream = 'Hello\npaiza\n1234\npa13'
 - [Array.prototype.join(SEP)](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
 ```js
-
 const stream = 'good\nmorning\npaiza\n813\npa13'
 // write code here
 
+
+console.log(result)
 ```
 
 
@@ -609,6 +700,8 @@ const stream = 'good\nmorning\npaiza\n813\npa13'
 const stream = 'good\nmorning\npaiza\n813\npa13'
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 15 文字列の配列の入力 1](https://paiza.jp/works/mondai/array_primer/array_primer__string_input_step1/edit?language_uid=javascript)
@@ -619,6 +712,8 @@ const stream = 'good\nmorning\npaiza\n813\npa13'
 const stream = 'eight\none\nthree\npaiza\npa13\n813'
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 16 文字列の配列の入力 2](https://paiza.jp/works/mondai/array_primer/array_primer__string_input_step2/edit?language_uid=javascript)
@@ -629,6 +724,8 @@ const stream = 'eight\none\nthree\npaiza\npa13\n813'
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 17 文字列の配列の入力 3](https://paiza.jp/works/mondai/array_primer/array_primer__string_input_step3/edit?language_uid=javascript)
@@ -640,6 +737,8 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [[N], SS] = stream.split('\n').map(line => line.split(' '))
 // write code here
 
+
+console.log(result)
 ```
 ### [STEP: 18 i 番目の出力 1](https://paiza.jp/works/mondai/array_primer/array_primer__string_i-thinput_step1/edit?language_uid=javascript)
 
@@ -652,6 +751,7 @@ const N = parseInt(stream)
 // write code here
 
 
+console.log(result)
 ```
 
 ### [STEP: 19 i 番目の出力 2](https://paiza.jp/works/mondai/array_primer/array_primer__string_i-thinput_step2/edit?language_uid=javascript)
@@ -663,6 +763,8 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [[N], SS] = stream.split('\n').map(line => line.split(' '))
 // write code here
 
+
+console.log(result)
 ```
 
 
@@ -676,6 +778,8 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [[N, M], SS] = stream.split('\n').map(line => line.split(' '))
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 21 i 番目の出力 4](https://paiza.jp/works/mondai/array_primer/array_primer__string_i-thinput_step4/edit?language_uid=javascript)
@@ -688,6 +792,8 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [[N, M, L], SS] = stream.split('\n').map(line => line.split(' '))
 // write code here
 
+
+console.log(result)
 ```
 
 - [Array.prototype.sort(FUN)](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
@@ -703,6 +809,8 @@ const [[N, M, L], SS] = stream.split('\n').map(line => line.split(' '))
 const stream = 'zaipa izapa paiza'
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 23 辞書順に出力 2](https://paiza.jp/works/mondai/array_primer/array_primer__string_dictionary_step2/edit?language_uid=javascript)
@@ -714,6 +822,8 @@ const stream = 'zaipa izapa paiza'
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 24 辞書順に出力 3](https://paiza.jp/works/mondai/array_primer/array_primer__string_dictionary_step3/edit?language_uid=javascript)
@@ -727,6 +837,8 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [[N], SS] = stream.split('\n').map(line => line.split(' '))
 // write code here
 
+
+console.log(result)
 ```
 
 ### [final 文字列の配列】辞書順に出力 Boss](https://paiza.jp/works/mondai/array_primer/array_primer__string_dictionary_boss/edit?language_uid=javascript)
@@ -740,6 +852,8 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [[N, K], SS] = stream.split('\n').map(line => line.split(' '))
 // write code here
 
+
+console.log(result)
 ```
 
 ## フィボナッチ数
@@ -747,6 +861,7 @@ const [[N, K], SS] = stream.split('\n').map(line => line.split(' '))
 ### [STEP: 1 重複の削除](https://paiza.jp/works/mondai/array_primer/array_primer__deduplication/edit?language_uid=javascript)
 
 - [Array.prototype.map(FUN)](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+- [Set](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Set)
 - [Array.prototype.sort(FUN)](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 - [Array.prototype.join(SEP)](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
@@ -754,9 +869,8 @@ const [[N, K], SS] = stream.split('\n').map(line => line.split(' '))
 const stream = '1 3 5 1 2 3 6 6 5 1 4'
 const cols = stream.split(' ').map(Number)
 
-const hashset = new Set(cols)
-const result = [...hashset].sort()
-console.log(result.join('\n'))
+
+console.log(result)
 ```
 
 ### [STEP: 2 配列の最大最小](https://paiza.jp/works/mondai/array_primer/array_primer__array_minmax/edit?language_uid=javascript)
@@ -772,6 +886,8 @@ const [[N], AS] = stream.split('\n')
   .map(line => line.split(' ').map(Number))
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 3 ある数以上以下の要素の列挙 1](https://paiza.jp/works/mondai/array_primer/array_primer__array_ave_step1/edit?language_uid=javascript)
@@ -786,6 +902,8 @@ const [[N], AS] = stream.split('\n')
   .map(line => line.split(' ').map(Number))
 // write code here
 
+
+console.log(result)
 ```
 ### [STEP: 4 ある数以上以下の要素の列挙 2](https://paiza.jp/works/mondai/array_primer/array_primer__array_ave_step2/edit?language_uid=javascript)
 
@@ -799,6 +917,8 @@ const [[N, K], AS] = stream.split('\n')
   .map(line => line.split(' ').map(Number))
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 5 ある数以上以下の要素の列挙 3](https://paiza.jp/works/mondai/array_primer/array_primer__array_ave_step3/edit?language_uid=javascript)
@@ -814,6 +934,8 @@ const [[N], AS] = stream.split('\n')
   .map(line => line.split(' ').map(Number))
 // write code here
 
+
+console.log(result)
 ```
 ### [STEP: 6 二点間の距離 1](https://paiza.jp/works/mondai/array_primer/array_primer__array_distance_step1/edit?language_uid=javascript)
 
@@ -827,6 +949,8 @@ const [[N], ...AS] = stream.split('\n')
   .map(line => line.split(' ').map(Number))
 // write code here
 
+
+console.log(result)
 ```
 
 ### [STEP: 7 二点間の距離 2](https://paiza.jp/works/mondai/array_primer/array_primer__array_distance_step2/edit?language_uid=javascript)
@@ -842,6 +966,8 @@ const [[N, A, B], ...AS] = stream.split('\n')
   .map(line => line.split(' ').map(Number))
 // write code here
 
+
+console.log(result)
 ```
 
 ### [final  フィボナッチ数](https://paiza.jp/works/mondai/array_primer/array_primer__fibo/edit?language_uid=javascript)

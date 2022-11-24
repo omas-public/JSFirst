@@ -1,3 +1,7 @@
+author: Omas Naohiko
+create: 2022-11-12
+update: 2022-11-24
+
 # [二重ループメニュー](https://paiza.jp/works/mondai/double_roop_problems/problem_index?language_uid=javascript)
 
 入力は以下を使用

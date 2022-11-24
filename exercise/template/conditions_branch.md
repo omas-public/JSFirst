@@ -1,3 +1,7 @@
+author: Omas Naohiko
+create: 2022-11-12
+update: 2022-11-24
+
 # [条件分岐メニュー](https://paiza.jp/works/mondai/conditions_branch/problem_index?language_uid=javascript)
 
 入力処理は以下を使用
@@ -20,6 +24,8 @@ const matrix = stream.split('\n').map(line => line.split(' '))
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [N, ...rest] = stream.split('\n').map(Number)
 
+
+console.log(result)
 ```
 
 
@@ -30,6 +36,9 @@ const [N, ...rest] = stream.split('\n').map(Number)
 ```js
 const S = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 
+
+
+console.log(result)
 ```
 
 ### [STEP: 2 数値の分岐](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__simple_step2/edit?language_uid=javascript)
@@ -40,6 +49,8 @@ const S = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const N = parseInt(stream) 
 
+
+console.log(result)
 ```
 
 ### [STEP: 3 数値演算結果で分岐](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__simple_step3/edit?language_uid=javascript)
@@ -50,6 +61,8 @@ const N = parseInt(stream)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [A, B, C] = stream.split(' ').map(Number)
 
+
+console.log(result)
 ```
 
 ### [STEP: 4 ゼロ以外](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__simple_step4/edit?language_uid=javascript)
@@ -60,6 +73,8 @@ const [A, B, C] = stream.split(' ').map(Number)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const N = parseInt(stream)
 
+
+console.log(result)
 ```
 
 ### [final AND+OR](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__bool_boss/edit?language_uid=javascript)
@@ -72,6 +87,8 @@ const N = parseInt(stream)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [X, Y, Z] = stream.split(' ').map(Number)
 
+
+console.log(result)
 ```
 
 #### Arrayのメソッドを使う方法
@@ -83,6 +100,8 @@ const [X, Y, Z] = stream.split(' ').map(Number)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [X, Y, Z] = stream.split(' ').map(Number)
 
+
+console.log(result)
 ```
 
 ### [STEP: 1 AND](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__bool_step1/edit?language_uid=javascript)
@@ -94,6 +113,7 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [A, B] = stream.split(' ').map(Number)
 
 
+console.log(result)
 ```
 
 - [Array.prototype.every](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
@@ -102,6 +122,8 @@ const [A, B] = stream.split(' ').map(Number)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [A, B] = stream.split(' ').map(Number)
 
+
+console.log(result)
 ```
 
 ### [STEP: 2 大文字判定](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__bool_step2/edit?language_uid=javascript)
@@ -111,6 +133,8 @@ const [A, B] = stream.split(' ').map(Number)
 ```js
 const C = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 
+
+console.log(result)
 ```
 
 - [String.prototype.charCodeAt()](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt)
@@ -118,6 +142,8 @@ const C = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 ```js
 const C = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 
+
+console.log(result)
 ```
 
 ### [STEP: 3 OR](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__bool_step3/edit?language_uid=javascript)
@@ -128,6 +154,8 @@ const C = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [A, B] = stream.split(' ').map(Number)
 
+
+console.log(result)
 ```
 
 - [Array.prototype.some()](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
@@ -136,6 +164,8 @@ const [A, B] = stream.split(' ').map(Number)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [A, B] = stream.split(' ').map(Number)
 
+
+console.log(result)
 ```
 ### [STEP: 4 NOT](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__bool_step4/edit?language_uid=javascript)
 
@@ -145,6 +175,8 @@ const [A, B] = stream.split(' ').map(Number)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const X = parseInt(stream)
 
+
+console.log(result)
 ```
 
 ### [STEP: 5 AND+NOT](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__bool_step5/edit?language_uid=javascript)
@@ -153,6 +185,8 @@ const X = parseInt(stream)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [A, B] = stream.split(' ').map(Number)
 
+
+console.log(result)
 ```
 
 - Array.prototype.every
@@ -161,8 +195,9 @@ const [A, B] = stream.split(' ').map(Number)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [A, B] = stream.split(' ').map(Number)
 
-```
 
+console.log(result)
+```
 
 ## FizzBuzz
 
@@ -174,6 +209,7 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const N = parseInt(stream)
 
 
+console.log(result)
 ```
 
 ### [STEP: 1 3 の倍数判定](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__mod_step1/edit?language_uid=javascript)
@@ -181,6 +217,8 @@ const N = parseInt(stream)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const N = parseInt(stream)
 
+
+console.log(result)
 ```
 
 ### [STEP: 2 2 つの倍数判定](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__mod_step2/edit?language_uid=javascript)
@@ -189,6 +227,8 @@ const N = parseInt(stream)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const N = parseInt(stream)
 
+
+console.log(result)
 ```
 
 ### [STEP: 3 偶奇の判定](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__mod_step3/edit?language_uid=javascript)
@@ -199,6 +239,8 @@ const N = parseInt(stream)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [[N], AN] = stream.split('\n').map(line => line.split(' '))
 
+
+console.log(result)
 ```
 
 - [Array.prototype.reduce](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
@@ -207,6 +249,8 @@ const [[N], AN] = stream.split('\n').map(line => line.split(' '))
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [[N], AN] = stream.split('\n').map(line => line.split(' '))
 
+
+console.log(result)
 ```
 
 ### [STEP: 4 曜日の判定](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__mod_step4/edit?language_uid=javascript)
@@ -215,6 +259,8 @@ const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const X = parseInt(stream)
 const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
+
+console.log(result)
 ```
 
 
@@ -228,6 +274,8 @@ const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [A, B] = stream.split(' ').map(Number)
 
+
+console.log(result)
 ```
 
 ### [STEP: 1 けた数の測定](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__complex_step1/edit?language_uid=javascript)
@@ -238,6 +286,8 @@ const [A, B] = stream.split(' ').map(Number)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const N = parseInt(stream)
 
+
+console.log(result)
 ```
 
 ### [STEP: 2 足したり引いたり](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__complex_step2/edit?language_uid=javascript)
@@ -248,6 +298,8 @@ const N = parseInt(stream)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [N, A, B] = stream.split(' ').map(Number)
 
+
+console.log(result)
 ```
 
 ### [STEP: 3 同値判定](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__complex_step3?language_uid=javascript)
@@ -258,6 +310,8 @@ const [N, A, B] = stream.split(' ').map(Number)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [N, A, B] = stream.split('\n').map(line => line.split(' '))
 
+
+console.log(result)
 ```
 ### [STEP: 4 終了判定](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__complex_step4?language_uid=javascript)
 
@@ -269,6 +323,8 @@ const [N, A, B] = stream.split('\n').map(line => line.split(' '))
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [[N], A] = stream.split('\n').map(line => line.split(' ').map(Number))
 
+
+console.log(result)
 ```
 
 ### [STEP: 5 終了判定 2](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__complex_step5?language_uid=javascript)
@@ -280,6 +336,8 @@ const [[N], A] = stream.split('\n').map(line => line.split(' ').map(Number))
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [N, K] = stream.split(' ').map(Number)
 
+
+console.log(result)
 ```
 
 - [Generator](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Generator)
@@ -305,6 +363,8 @@ console.log(result)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [N, K, T] = stream.split(' ').map(Number)
 
+
+console.log(result)
 ```
 
 ### [STEP: 7 崖に落ちるか判定](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__complex_step7/edit?language_uid=javascript)
@@ -315,6 +375,8 @@ const [N, K, T] = stream.split(' ').map(Number)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [N, K, T] = stream.split(' ').map(Number)
 
+
+console.log(result)
 ```
 
 ### [STEP: 8 タイルの敷き詰め](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__complex_step8?language_uid=javascript)
@@ -325,4 +387,6 @@ const [N, K, T] = stream.split(' ').map(Number)
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [H, W] = stream.split(' ').map(Number)
 
+
+console.log(result)
 ```

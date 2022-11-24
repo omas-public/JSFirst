@@ -29,6 +29,9 @@ STEP 9 及び 10 は，今は解けなくても良いが，ブール代数式か
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [a, b] = stream.split(' ').map(Number)
+// write code here
+
+console.log(result)
 ```
 
 
@@ -38,6 +41,10 @@ const [a, b] = stream.split(' ').map(Number)
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [a, b] = stream.split(' ').map(Number)
+// write code here
+
+console.log(result)
+
 ```
 
 ### [STEP: 3 否定( NOT )の基本](https://paiza.jp/works/mondai/logical_operation/logical_operation__basic_step3/edit?language_uid=javascript)
@@ -45,6 +52,10 @@ const [a, b] = stream.split(' ').map(Number)
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const a = parseInt(stream)
+// write code here
+
+console.log(result)
+
 ```
 
 ### [STEP: 4 排他的論理和( XOR )の基本](https://paiza.jp/works/mondai/logical_operation/logical_operation__basic_step4/edit?language_uid=javascript)
@@ -52,6 +63,10 @@ const a = parseInt(stream)
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [a, b] = stream.split(' ').map(Number)
+// write code here
+
+console.log(result)
+
 ```
 
 ###  [STEP: 5 NAND 演算の基本](https://paiza.jp/works/mondai/logical_operation/logical_operation__basic_step5/edit?language_uid=javascript)
@@ -59,6 +74,10 @@ const [a, b] = stream.split(' ').map(Number)
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [a, b] = stream.split(' ').map(Number)
+// write code here
+
+console.log(result)
+
 ```
 
 ### [STEP: 6 NOR 演算の基本](https://paiza.jp/works/mondai/logical_operation/logical_operation__basic_step6/edit?language_uid=javascript)
@@ -66,6 +85,10 @@ const [a, b] = stream.split(' ').map(Number)
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [a, b] = stream.split(' ').map(Number)
+// write code here
+
+console.log(result)
+
 ```
 
 ### [STEP: 7 XNOR 演算の基本](https://paiza.jp/works/mondai/logical_operation/logical_operation__basic_step7/edit?language_uid=javascript)
@@ -73,6 +96,10 @@ const [a, b] = stream.split(' ').map(Number)
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [a, b] = stream.split(' ').map(Number)
+// write code here
+
+console.log(result)
+
 ```
 
 ### [STEP: 8 半加算器](https://paiza.jp/works/mondai/logical_operation/logical_operation__basic_step8/edit?language_uid=javascript)
@@ -80,6 +107,10 @@ const [a, b] = stream.split(' ').map(Number)
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [a, b] = stream.split(' ').map(Number)
+// write code here
+
+console.log(result)
+
 ```
 
 ### [STEP: 9 全加算器](https://paiza.jp/works/mondai/logical_operation/logical_operation__basic_step9/edit?language_uid=javascript)
@@ -87,6 +118,10 @@ const [a, b] = stream.split(' ').map(Number)
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [a, b, C1] = stream.split(' ').map(Number)
+// write code here
+
+console.log(result)
+
 ```
 
 #### 別解:[全加算回路の論理式](https://eng.kice.tokyo/logic/adder/)により
@@ -109,6 +144,10 @@ console.log(result)
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const [a, b, c, d] = stream.split(' ').map(Number)
+// write code here
+
+console.log(result)
+
 ```
 #### 別解: !((!a & !b) | !c) ^ d は ド・モルガンの法則で (a | b) & c ^ d に簡約できる
 
