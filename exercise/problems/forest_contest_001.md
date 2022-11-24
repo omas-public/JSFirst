@@ -37,7 +37,7 @@
   const result = fn(s)
 
   // 表示
-  display(identity)(result)
+  outputs(result).toLine()
 
 })()
 ```
@@ -67,7 +67,7 @@
   const result = fn(dic)(s)
 
   // 表示
-  display(identity)(result)
+  outputs(result).toLine()
 
 })()
 ```
@@ -75,26 +75,15 @@
 ## [バイトの休憩時間](https://paiza.jp/works/mondai/forest_contest_001/forest_contest_001__d_break_time/edit?language_uid=javascript)
 
 ```js
-// 即時実行関数(main)
 (() => {
-
-  // define function
   const fn = (h) => {
-    // ここに処理を書く
-    if (h <= 6) return 'no break'
-    return (h < 8) ? '45 min' : '60 min' 
+    return (h <= 6) 
+      ? 'no break'
+      : (h < 8) ? '45 min' : '60 min'
   }
-
-  // declare varriable
-
-  // 入力値を取得
   const h = inputs().readStream(Number)
-
-  // 取得した値を関数に渡して結果をresultに代入
   const result = fn(h)
-
-  // 表示
-  display(identity)(result)
+  outputs(result).toLine()
 
 })()
 ```
@@ -102,25 +91,13 @@
 ## [自動車の燃費](https://paiza.jp/works/mondai/forest_contest_001/forest_contest_001__d_car_fuel/edit?language_uid=javascript)
 
 ```js
-// 即時実行関数(main)
 (() => {
-
-  // define function
   const fn = (v, d) => {
-    // ここに処理を書く
     return Math.trunc(d / v)
   }
-
-  // declare varriable
-
-  // 入力値を取得
   const [v, d] = inputs().readCols(Number)
-
-  // 取得した値を関数に渡して結果をresultに代入
   const result = fn(v, d)
-
-  // 表示
-  display(identity)(result)
+  outputs(result).toLine()
 
 })()
 ```
@@ -129,23 +106,12 @@
 
 ```js
 (() => {
-
-  // define function
   const fn = (matrix) => {
-    // ここに処理を書く
     return [...matrix].sort(([a], [b]) => a - b)
   }
-
-  // declare varriable
-
-  // 入力値を取得
   const matrix = inputs().readMatrix().slice(1)
-
-  // 取得した値を関数に渡して結果をresultに代入
   const result = fn(matrix)
-
-  // 表示
-  display(join('\n'))(result.map(join(' ')))
+  outputs(result).toMatrix()
 
 })()
 ```

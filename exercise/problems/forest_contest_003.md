@@ -4,24 +4,13 @@
 
 ```js
 (() => {
-
-  // define function
   const fn = (s) => {
-    // ここに処理を書く
-    return s.split('').reverse().join('')
+    return Array.from(s).reverse().join('')
     // return join('')(split('')(s).reverse())
   }
-
-  // declare varriable
-
-  // 入力値を取得
   const s = inputs().readStream()
-
-  // 取得した値を関数に渡して結果をresultに代入
   const result = fn(s)
-
-  // 表示
-  display(identity)(result)
+  output(result).toLine()
 
 })()
 ```
@@ -30,23 +19,12 @@
 
 ```js
 (() => {
-
-  // define function
   const fn = (s1, s2) => {
-    // ここに処理を書く
     return [s1, s2].join('')
   }
-
-  // declare varriable
-
-  // 入力値を取得
   const [s1, s2] = inputs().readCols()
-
-  // 取得した値を関数に渡して結果をresultに代入
   const result = fn(s)
-
-  // 表示
-  display(identity)(result)
+  outputs(result).toLine()
 
 })()
 ```
@@ -55,23 +33,12 @@
 
 ```js
 (() => {
-
-  // define function
   const fn = (s) => {
-    // ここに処理を書く
     return s.toLowerCase()
   }
-
-  // declare varriable
-
-  // 入力値を取得
   const s = inputs().readStream()
-
-  // 取得した値を関数に渡して結果をresultに代入
   const result = fn(s)
-
-  // 表示
-  display(identity)(result)
+  outputs(result).toLine()
 
 })()
 ```
@@ -80,23 +47,16 @@
 
 ```js
 (() => {
-
-  // define function
   const fn = (matrix) => {
-    // ここに処理を書く
     const mapfun = (caps = false) => array => {
-
       if (array[0] === 'capslock') {
         caps = !caps
         return undefined
       }
-
       if (array[0] === 'shift') {
         return array[1].toUppercase()
       }
-
       return caps ? array[0].toUpperCase() : array[0]
-
     }
     return [...matrix].map(mapfun()).filter(identity).join('')
   }
@@ -104,13 +64,13 @@
   // declare varriable
 
   // 入力値を取得
-  const matrix = inputs().readMatrix().slice(1)
+  const [n, ...matrix] = inputs().readMatrix()
 
   // 取得した値を関数に渡して結果をresultに代入
   const result = fn(matrix)
 
   // 表示
-  display(identity)(result)
+  outputs(result).toLine()
 
 })()
 
@@ -126,39 +86,28 @@
 
 // 即時実行関数(main)
 (() => {
-
-  // define function
   const bitPattern = n => {
-    const seq = n => [...Array(n).keys()]
-    return seq(1 << n)
+    const seq0 = n => [...Array(n)].map((v, i) => i)
+    return seq0(1 << n)
       .map(bit => seq(n).filter(i => bit & (1 << i)))
   }
-
   const fn = (n, array) => {
-    // ここに処理を書く
     const numbers = array.sort((a, b) => a - b)
     const add = (a, b) => a + b
     const sum777 = bitPattern(n)
       .map(array => array.map(i => numbers[i]))
       .filter(array => array.reduce(add, 0) === 777)
 
-    switch (sum777.length) {
-      case 0: return 'no answer'
-      case 1: return sum777[0].join(' ')
-      default: return 'multiple answers'
+    const dic = {
+      0 : 'no answer',
+      1 : sum777[0].join(' ')
     }
+    return dic[sum777.length] ?? 'multiple answers'
   }
 
-  // declare varriable
-
-  // 入力値を取得
   const [n, ...array] = inputs().readRows(Number)
-
-  // 取得した値を関数に渡して結果をresultに代入
   const result = fn(n, array)
-
-  // 表示
-  display(identity)(result)
+  outputs(result).toLine()
 
 })()
 ```
