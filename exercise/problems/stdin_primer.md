@@ -1,6 +1,6 @@
 Author: Omas Naohiko
 create: 2022-10-12
-update: 2022-10-12
+update: 2022-11-24
 
 # [標準入力メニュー](https://paiza.jp/works/mondai/stdin_primer/problem_index?language_uid=javascript)
 
@@ -14,9 +14,7 @@ update: 2022-10-12
 - inputs().readCols([Number])    // 1行複数列([数字に変換])を配列としてデータを取得
 - inputs().readMatrix([Number])  // 複数行複数列([数字に変換])を2重配列としてデータを取得
 - identity(VALUE)                // VALUEを返す
-- split(SEP)(STRING)             // 文字列をSEPで分解した配列を返す
-- join(SEP)(ARRAY)               // 配列をSEPで結合した文字列を返す
-- display(FN)(VALUE)             // VALUEに関数を適用して表示する
+- outputs(VALUE).toXXX()         // VALUEに関数を適用して表示する
 
 ## 【行入力】
 
@@ -30,7 +28,7 @@ update: 2022-10-12
   }
   const list = inputs().readRows()
   const result = fn(list)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -46,7 +44,7 @@ update: 2022-10-12
   }
   const s = inputs().readStream()
   const result = fn(s)
-  display(identity)(result)
+  outputs(result).toLine()
 
 })()
 ```
@@ -61,7 +59,7 @@ update: 2022-10-12
   }
   const [s, t] = inputs().readRows()
   const result = fn(s, t)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -76,7 +74,7 @@ update: 2022-10-12
   }
   const [s, t, u] = inputs().readRows()
   const result = fn(s, t, u)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -91,7 +89,7 @@ update: 2022-10-12
   }
   const array = inputs().readRows()
   const result = fn(array)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -108,7 +106,7 @@ update: 2022-10-12
   }
   const array = split(' ')('one two three four five')
   const result = fn(array)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -121,9 +119,9 @@ update: 2022-10-12
   const fn = (a, b) => {
     return [a, b]
   }
-  const [a, b] = split(' ')('Hello paiza')
+  const [a, b] = 'Hello paiza'.split(' ')
   const result = fn(a, b)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -138,7 +136,7 @@ update: 2022-10-12
   }
   const [a, b, c] = split(' ')('He likes paiza')
   const result = fn(a, b, c)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -156,7 +154,7 @@ update: 2022-10-12
   }
   const array = inputs().readCols()
   const result = fn(array)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -172,7 +170,7 @@ update: 2022-10-12
   }
   const s = inputs().readStream()
   const result = fn(s)
-  display(identity)(result)
+  outputs(result).toLine()
 
 })()
 
@@ -188,7 +186,7 @@ update: 2022-10-12
   }
   const [s1, s2] = inputs().readCols()
   const result = fn(s1, s2)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -203,7 +201,7 @@ update: 2022-10-12
   }
   const [s1, s2, s3] = inputs().readCols()
   const result = fn(s1, s2, s3)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -218,7 +216,7 @@ update: 2022-10-12
   }
   const array = inputs().readCols()
   const result = fn(array)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -235,7 +233,7 @@ update: 2022-10-12
   }
   const array = inputs().readRows(Number)
   const result = fn(array)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -250,7 +248,7 @@ update: 2022-10-12
   }
   const a = inputs().readStream(Number)
   const result = fn(a)
-  display(identity)(result)
+  outputs(result).toLine()
 
 })()
 ```
@@ -265,7 +263,7 @@ update: 2022-10-12
   }
   const [a, b] = inputs().readRows(Number)
   const result = fn(a, b)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -280,7 +278,7 @@ update: 2022-10-12
   }
   const [a1, a2, a3, a4, a5] = inputs().readRows(Number)
   const result = fn(a1, a2, a3, a4, a5)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -295,7 +293,7 @@ update: 2022-10-12
   }
   const array = inputs().readRows(Number)
   const result = fn(array)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -312,7 +310,7 @@ update: 2022-10-12
   }
   const array = inputs().readCols(Number)
   const result = fn(array)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -327,7 +325,7 @@ update: 2022-10-12
   }
   const a = inputs().readStream(Number)
   const result = fn(a)
-  display(identity)(result)
+  outputs(result).toLine()
 
 })()
 ```
@@ -342,7 +340,7 @@ update: 2022-10-12
   }
   const [a, b] = inputs().readCols(Number)
   const result = fn(a, b)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 
@@ -358,7 +356,7 @@ update: 2022-10-12
   }
   const [a1, a2, a3, a4, a5] = inputs.readCols(Number)
   const result = fn(a1, a2, a3, a4, a5)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -373,7 +371,7 @@ update: 2022-10-12
   }
   const array = inputs.readCols(Number)
   const result = fn(array)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -390,7 +388,7 @@ update: 2022-10-12
   }
   const [N, ...array] = inputs().readCols(Number)
   const result = fn(array)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 
@@ -406,7 +404,7 @@ update: 2022-10-12
   }
   const [N, ...array] = inputs().readRows(Number)
   const result = fn(array)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -421,7 +419,7 @@ update: 2022-10-12
   }
   const [N, ...matrix] = inputs().readMatrix(Number)
   const result = fn(matrix.flat())
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -436,7 +434,7 @@ update: 2022-10-12
   }
   const [N, ...array] = inputs().readCols(Number)
   const result = fn(array)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -451,7 +449,7 @@ update: 2022-10-12
   }
   const [N, ...matrix] = inputs().readMatrix(Number)
   const result = fn(matrix.flat())
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -468,7 +466,7 @@ update: 2022-10-12
   }
   const [N, ...array] = inputs().readCols()
   const result = fn(array)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -483,7 +481,7 @@ update: 2022-10-12
   }
   const [N, ...array] = inputs().readRows()
   const result = fn(array)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -498,7 +496,7 @@ update: 2022-10-12
   }
   const [N, ...array] = inputs().readRows()
   const result = fn(array)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -513,7 +511,7 @@ update: 2022-10-12
   }
   const [N, ...array] = inputs().readCols()
   const result = fn(array)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -530,7 +528,7 @@ update: 2022-10-12
   }
   const [N, ...array] = inputs().readCols(Number)
   const result = fn(array)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -545,7 +543,7 @@ update: 2022-10-12
   }
   const [N, ...array] = inputs().readRows(Number)
   const result = fn(array)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -560,7 +558,7 @@ update: 2022-10-12
   }
   const [N, ...matrix] = inputs().readMatrix(Number)
   const result = fn(matrix.flat())
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 ```
@@ -575,7 +573,7 @@ update: 2022-10-12
   }
   const [N, ...array] = inputs().readRows(Number)
   const result = fn(array)
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 
@@ -591,7 +589,7 @@ update: 2022-10-12
   }
   const [N, ...matrix] = inputs().readMatrix(Number)
   const result = fn(matrix.flat())
-  display(join('\n'))(result)
+  outputs(result).toRows()
 
 })()
 
@@ -610,7 +608,7 @@ update: 2022-10-12
   }
   const [N, ...matrix] = inputs().readMatrix()
   const result = fn(matrix[7])
-  display(join(' '))(result)
+  outputs(result).toCols()
 
 })()
 ```
@@ -627,7 +625,7 @@ update: 2022-10-12
   }
   const [a, b] = inputs().readCols(Number)
   const result = fn(a, b)
-  display(join(' '))(result)
+  outputs(result).toCols()
 
 })()
 
@@ -643,7 +641,7 @@ update: 2022-10-12
   }
   const [N, ...matrix] = inputs().readMatrix(Number)
   const result = fn(matrix)
-  display(join('\n'))(result.map(join(' ')))
+  outputs(result).toMatrix()
 
 })()
 
@@ -660,7 +658,7 @@ update: 2022-10-12
   }
   const [N, ...matrix] = inputs().readMatrix(Number)
   const result = fn(matrix[7])
-  display(join(' '))(result)
+  outputs(result).toCols()
 
 })()
 
@@ -676,7 +674,7 @@ update: 2022-10-12
   }
   const [N, ...matrix] = inputs().readMatrix()
   const result = fn(matrix)
-  display(join('\n'))(result.map(join(' ')))
+  outputs(result).toMatrix()
 
 })()
 
@@ -695,7 +693,7 @@ update: 2022-10-12
 
   const [N, ...matrix] = inputs().readMatrix(Number)
   const result = fn(matrix)
-  display(join('\n'))(result.map(join(' ')))
+  outputs(result).toMatrix()
 
 })()
 ```
@@ -711,7 +709,7 @@ update: 2022-10-12
 
   const matrix = inputs().readMatrix(Number)
   const result = fn(matrix)
-  display(join('\n'))(result.map(join(' ')))
+  outputs(result).toMatrix()
 
 })()
 ```
@@ -727,7 +725,7 @@ update: 2022-10-12
 
   const [N, ...matrix] = inputs().readMatrix(Number)
   const result = fn(matrix)
-  display(join('\n'))(result.map(join(' ')))
+  outputs(result).toMatrix()
 
 })()
 ```
@@ -743,7 +741,7 @@ update: 2022-10-12
 
   const [N, ...matrix] = inputs().readMatrix(Number)
   const result = fn(matrix)
-  display(join('\n'))(result.map(join(' ')))
+  outputs(result).toMatrix()
 
 })()
 
@@ -760,7 +758,7 @@ update: 2022-10-12
 
   const [[N, M], ...matrix] = inputs().readMatrix(Number)
   const result = fn(matrix)
-  display(join('\n'))(result.map(join(' ')))
+  outputs(result).toMatrix()
 
 })()
 ```
