@@ -94,7 +94,7 @@ console.log(result)
 
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
-const [A, B, C] = stream.split('\n').map(Number)
+const [A, B, C] = stream.split(' ').map(Number)
 let N = 0
 // write code here
 
@@ -116,7 +116,7 @@ console.log(result)
 
 ```js
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
-const lines = stream.split('\n').map(Number)
+const lines = stream.split(' ').map(Number)
 
 // write code here
 

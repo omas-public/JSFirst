@@ -68,7 +68,7 @@ while (counter < lines.length) {
 }
 
 // for文
-for (let i = 0; i < 3; i+=1) {
+for (let i = 0; i < lines.length; i+=1) {
     console.log(lines[i])
 }
 
