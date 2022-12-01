@@ -5,6 +5,7 @@
 ```bash
 mkdir -p ~/Boxes/node && cd $_
 vagrant init ubuntu/focal64
+vagrant box update
 ```
 
 edit Vagrantfile
