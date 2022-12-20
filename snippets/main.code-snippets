@@ -14,7 +14,7 @@
       "  }",
       "",
       "  // declare varriable",
-      "  const ${1:PARAM} = inputs().${2:readStream()}",
+      "  const ${1:PARAM} = inputs('./data').${2:readStream()}",
       "",
       "  // processing",
       "  const result = fn(${1:PARAM})",
