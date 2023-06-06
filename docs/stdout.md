@@ -75,7 +75,7 @@ for (let i of [1, 2, 3]) {
 
 #### [Array.joinを使う](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 ```js
-console.log(Array.join([1, 2, 3]))
+console.log([1,2,3].join('\n'))
 ```
 
 
