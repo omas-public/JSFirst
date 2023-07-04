@@ -11,7 +11,7 @@ update: 2022-11-24
 const stream = require('fs').readFileSync('/dev/stdin', 'utf8').trim()
 const cols = stream.split(' ')
 const lines = stream.split('\n')
-const matrix = stream.split('\n').map(line => line.split(' '))
+const matrix = lines.map(line => line.split(' '))
 ```
 
 ## 【次元配列の入出力】i番目の出力 Boss
