@@ -4,7 +4,7 @@
 
 ```bash
 mkdir -p ~/Boxes/node && cd $_
-vagrant init ubuntu/focal64
+vagrant init ubuntu/jammy64
 vagrant box update
 ```
 
@@ -32,16 +32,14 @@ $ vagrant ssh
 
 ```sh
 $ sudo apt update -y
-$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
-$ source ~/.bashrc
-$ nvm install node
-$ nvm use node
+$ curl https://get.volta.sh | bash
 ```
 
 ## standardjs and jest
 
 ```sh
 $ npm install -g standard
+$ npm install -g prettier-standard
 $ npm install -g jest
 $ sudo cat >/etc/sysctl.d/99-max_user_watches.conf << EOF
 fs.inotify.max_user_watches=524288
