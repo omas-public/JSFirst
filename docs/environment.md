@@ -62,13 +62,14 @@ $ 1
 
 ## GitHub 設定 (仮想環境内)
 
-1. GitHub Tokens発行
-    [GitHubログイン]-[Settings]-[Developer settings]-[Personal access tokens]-[Tokens(classic)]作成
-    Tokensの設定を期限60日、権限範囲 repo, gistにチェック
+1. GitHub Tokens発行  
+    [GitHubログイン]-[Settings]-[Developer settings]-  
+    [Personal access tokens]-[Tokens(classic)]作成  
+    Tokensの設定を期限60日、権限範囲 repo, gistにチェック  
 
 2. 作成されたトークンをコピーして大切な場所に保存
 
-3. トークンを自動入力するために「~/.netrc」で設定
+3. トークンを自動入力するために「~/.netrc」で設定  
 `$ vi ~/.netrc`
 
 ``` .netrc
@@ -85,10 +86,10 @@ $ git config --global user.email "メールアドレス"
 $ git config --global user.name "GitHubアカウント名"
 ```
 
-ブラウザからGitHubで授業用のリポジトリを新規作成
-*リポジトリ名* WebApp1
-*説明(Description)* WebApplication I JavaScript&React&Next.js
-*公開設定* Public
+ブラウザからGitHubで授業用のリポジトリを新規作成  
+*リポジトリ名* WebApp1  
+*説明(Description)* WebApplication I JavaScript&React&Next.js  
+*公開設定* Public  
 
 仮想環境内にCloneし、README.mdを作成
 ``` terminal
@@ -104,9 +105,9 @@ JavaScript React Next.js
 
 無視リスト(.gitignore)作成
 
-[.gitingnore.io](https://www.toptal.com/developers/gitignore)
-キーワード NextJS react Linux vs
-結果をコピー、「.gitingnore」を作成して
+[.gitingnore.io](https://www.toptal.com/developers/gitignore)  
+キーワード NextJS react Linux vs  
+結果をコピー、「.gitingnore」を作成して  
 ``` terminal
 $ nvim .gitingnore
 ```
