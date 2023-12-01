@@ -5,7 +5,7 @@
 vagrantで授業用の仮想環境を作成する
 ``` terminal
 $ mkdir -p ~/Boxes/node && cd $_
-$ vagrant init ubuntu/focal64
+$ vagrant init ubuntu/jammy64
 $ vagrant box update
 ```
 
@@ -26,10 +26,9 @@ $ vi Vagrantfile
 65: end
 ```
 
-仮想環境作成、sshのログインを楽にする設定
+仮想環境作成、ログイン
 ``` terminal
 $ vagrant up
-$ vagrant ssh-config --host [node] >> ~/.ssh/config
 $ vagrant ssh
 ```
 
@@ -44,12 +43,6 @@ $ volta install node
 $ volta install npm
 ```
 
-## standardjs and jest
-
-``` terminal
-$ npm install -g standard
-```
-
 ## neovim 設定 (仮想環境内)
 
 ``` terminal
@@ -58,6 +51,21 @@ $ cd ./settings/neovim/
 $ .install_neovim.sh
 $ 1) node 2) python3
 $ 1
+```
+
+neovim アップデート
+```
+$ sudo apt-get install software-properties-common
+$ sudo add-apt-repository ppa:neovim-ppa/stable
+$ sudo apt-get update
+$ sudo apt-get install neovim
+```
+neovim プラグインインストール
+```
+$ nvim
+
+:PlugInstall
+
 ```
 
 ## GitHub 設定 (仮想環境内)
