@@ -1,4 +1,4 @@
-# JavaScript 入門(2022)
+# JavaScript 入門(2023)
 
 ## Summary
 
@@ -15,29 +15,31 @@ JavaScriptの基礎をPaizaを併用して学習します。
 
 ### 1st lesson
 
-- PaizaコンテンツとVSCodeを用いてプログラムで演算をする手法を学習する
-- NodeとVSCodeの環境設定を行い，VSCode上でプログラムを実行する
+- Paizaコンテンツを用いてプログラムで演算をする手法を学習する
+- NodeとNeovimの環境設定を行い，Neovim上でプログラムを実行する
 
 #### References
 
-- [はじめてのプログラミング](https://paiza.jp/works/javascript/trial/javascript-trial-1/63001)
-- [間違いやすいポイント](https://paiza.jp/works/javascript/trial/javascript-trial-1/63002)
-- [コメントを書く](https://paiza.jp/works/javascript/trial/javascript-trial-1/63003 )
-- [数値を扱う](https://paiza.jp/works/javascript/trial/javascript-trial-1/63004)
-- [プログラムで計算する](https://paiza.jp/works/javascript/trial/javascript-trial-1/63005)
-- [変数にデータを入れる](https://paiza.jp/works/javascript/trial/javascript-trial-1/63006)
+- [JavaScript体験編1: JavaScriptをはじめよう](https://paiza.jp/works/javascript/trial/javascript-trial-1)
+  - chapter 2[はじめてのプログラミング](https://paiza.jp/works/javascript/trial/javascript-trial-1/63001)
+  - chapter 3[間違いやすいポイント](https://paiza.jp/works/javascript/trial/javascript-trial-1/63002)
+  - chapter 4[コメントを書く](https://paiza.jp/works/javascript/trial/javascript-trial-1/63003 )
+  - chapter 5[数値を扱う](https://paiza.jp/works/javascript/trial/javascript-trial-1/63004)
+  - chapter 6[プログラムで計算する](https://paiza.jp/works/javascript/trial/javascript-trial-1/63005)
+  - chapter 7[変数にデータを入れる](https://paiza.jp/works/javascript/trial/javascript-trial-1/63006)
+
 - [JavaScript Primer](https://jsprimer.net/)
-  - コメント
-  - 変数と宣言
-  - 値の評価と表示
-  - データ型とリテラル
-  - ラッパーオブジェクト
-  - 演算子
-  - 文と式
+  - [コメント](https://jsprimer.net/basic/comments/)
+  - [変数と宣言](https://jsprimer.net/basic/variables/)
+  - [値の評価と表示](https://jsprimer.net/basic/read-eval-print/)
+  - [データ型とリテラル](https://jsprimer.net/basic/data-type/)
+  - [ラッパーオブジェクト](https://jsprimer.net/basic/wrapper-object/)
+  - [演算子](https://jsprimer.net/basic/operator/)
+  - [文と式](https://jsprimer.net/basic/statement-expression/)
 
 #### Exercise
 
-- [コードガールコレクション Chap01 - Chap07](https://paiza.jp/cgc)
+- [コードガールコレクション STAGE01 - STAGE07](https://paiza.jp/cgc)
   - コメント
   - 文字列
   - 変数の四則演算
@@ -68,6 +70,7 @@ JavaScriptの基礎をPaizaを併用して学習します。
 
 - [標準入力サンプル問題セット 解答](./exercise/problems/basic/stdin.md)
 - [算術・代入演算メニュー 解答](./exercise/problems/basic/arithmetic_substitution_op.md)
+
 
 ### 3rd lesson 
 
