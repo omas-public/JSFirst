@@ -1,5 +1,7 @@
 # 環境設定 JavaScript 
 
+![JavaScript環境](../assets/JSFrist_Environment.png)
+
 ## 仮想環境作成 vagrant(on local machine)
 
 vagrantで授業用の仮想環境を作成する
@@ -131,3 +133,12 @@ $ git push origin main
 ```
 
 ブラウザGitHubでプッシュされたか確認
+
+
+## vscode plugin and module install
+
+```VSCode```
+
+- `ctrl + P` -> `ext install VisualStudioExptTeam.vscodeintellicode`
+- `ctrl + P` -> `ext install standard.vscode-standard`
+- `ctrl + P` -> `ext install firsttris.vscode-jest-runner`
