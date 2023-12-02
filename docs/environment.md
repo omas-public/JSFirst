@@ -44,13 +44,15 @@ $ exec $SHELL -l
 $ volta install node
 $ volta install npm
 ```
+* **[VOLTA](https://volta.sh/)** Nodeのバージョン管理  
+* **[npm](https://www.npmjs.com/)** Nodeのパッケージ管理  
 
 ## neovim 設定 (仮想環境内)
 
 ``` terminal
 $ git clone https://github.com/omas-public/settings.git
 $ cd ./settings/neovim/
-$ .install_neovim.sh
+$ ./install_neovim.sh
 $ 1) node 2) python3
 $ 1
 ```
@@ -62,6 +64,8 @@ $ sudo add-apt-repository ppa:neovim-ppa/stable
 $ sudo apt-get update
 $ sudo apt-get install neovim
 ```
+
+
 neovim プラグインインストール
 ```
 $ nvim
@@ -69,6 +73,11 @@ $ nvim
 :PlugInstall
 
 ```
+
+* **[neovim](https://neovim.io/)** Vim派生テキストエディタ  
+* **[JavaScript Standard Style](https://standardjs.com/readme-ja)** コードフォーマッター  
+* **[prettier standard](https://www.npmjs.com/package/prettier-standard)** コードフォーマッター  
+
 
 ## GitHub 設定 (仮想環境内)
 
@@ -80,7 +89,9 @@ $ nvim
 2. 作成されたトークンをコピーして大切な場所に保存
 
 3. トークンを自動入力するために「~/.netrc」で設定  
-`$ vi ~/.netrc`
+```
+$ vi ~/.netrc
+```
 
 ``` .netrc
 machine github.com
@@ -97,9 +108,9 @@ $ git config --global user.name "GitHubアカウント名"
 ```
 
 ブラウザからGitHubで授業用のリポジトリを新規作成  
-*リポジトリ名* WebApp1  
-*説明(Description)* WebApplication I JavaScript&React&Next.js  
-*公開設定* Public  
+**リポジトリ名** WebApp1  
+**説明(Description)** WebApplication I JavaScript&React&Next.js  
+**公開設定** Public  
 
 仮想環境内にCloneし、README.mdを作成
 ``` terminal
@@ -133,6 +144,11 @@ $ git push origin main
 ```
 
 ブラウザGitHubでプッシュされたか確認
+
+## neovim上でJavaScriptファイルを実行
+```neovim
+:!node %
+```
 
 
 ## vscode plugin and module install
