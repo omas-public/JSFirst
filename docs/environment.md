@@ -2,7 +2,6 @@
 
 ![JavaScript環境](../assets/JSFrist_Environment.png)
 
-## 仮想環境作成 vagrant(on local machine)
 
 vagrantで授業用の仮想環境を作成する
 ``` terminal
@@ -148,8 +147,15 @@ $ git push origin main
 ## neovim上でJavaScriptファイルを実行
 ```neovim
 :!node %
+=======
+```sh
+$ npm install -g standard
+$ npm install -g prettier-standard
+$ npm install -g jest
+$ sudo cat >/etc/sysctl.d/99-max_user_watches.conf << EOF
+fs.inotify.max_user_watches=524288
+EOF
 ```
-
 
 ## vscode plugin and module install
 
